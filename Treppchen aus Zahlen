@@ -1,0 +1,32 @@
+package adhoc5;
+
+public class Treppchen {
+
+    public static void main(String[] args) {
+        // Treppchen aus Zahlen 0-9
+
+        int zeilenstufen[][] = new int[10][];
+        for (int i = 0; i < zeilenstufen.length; i++) {
+            zeilenstufen[i] = new int[i + 1];
+             
+            for (int j = 0; j < zeilenstufen[i].length; j++) {
+                zeilenstufen[i][j] = j;
+            }
+        }
+
+        // Test möglich mit System.out.println(zeilenstufen[i][j] ==
+        // spaltenelemente[j]);
+        for (int[] zeile : zeilenstufen) {
+
+            for (int elem : zeile) {
+
+                System.out.print(elem);
+
+            }
+            System.out.println();
+        }
+
+       
+    }
+}
+
